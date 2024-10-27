@@ -6,7 +6,9 @@ export default function Home() {
       <h1 className="text-center px-4">
         Website is updating with new technologies, till then visit{" "}
         <span className="text-blue-500 underline">
-          <Link href={"https://subigyasubedi.com.np/"} target="__blank">Old Website</Link>
+          <Link href={"https://subigya.netlify.app/"} target="__blank">
+            Old Website
+          </Link>
         </span>
       </h1>
     </div>
