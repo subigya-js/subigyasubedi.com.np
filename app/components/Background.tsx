@@ -2,17 +2,38 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+interface VantaNetConfig {
+  el: HTMLElement;
+  mouseControls: boolean;
+  touchControls: boolean;
+  gyroControls: boolean;
+  minHeight: number;
+  minWidth: number;
+  scale: number;
+  scaleMobile: number;
+  color: number;
+  backgroundColor: number;
+  points: number;
+  maxDistance: number;
+  spacing: number;
+}
+
+type VantaNetEffect = {
+  destroy: () => void;
+  resize: () => void;
+};
+
 declare global {
   interface Window {
     VANTA: {
-      NET: (config: any) => any;
+      NET: (config: VantaNetConfig) => VantaNetEffect;
     };
   }
 }
 
 const Background = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const [vantaEffect, setVantaEffect] = useState<VantaNetEffect | null>(null);
 
   useEffect(() => {
     if (!vantaEffect && backgroundRef.current && typeof window !== 'undefined' && window.VANTA) {
