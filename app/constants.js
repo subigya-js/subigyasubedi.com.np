@@ -1,10 +1,10 @@
 export const projects = [
   {
-    id: "auth",
-    name: "Authenticator",
-    desc: "An Authenticator application with a user dashboard.  ",
-    repo: "https://github.com/subigya-js/authenticator",
-    deploy: "https://authenticator-subigya.vercel.app/",
+    id: "cm",
+    name: "Contact Manager API",
+    desc: "Contact Manager Application Backend built with Express JS and MongoDB.",
+    repo: "https://github.com/subigya-js/blog-application",
+    deploy: "https://github.com/subigya-js/blog-application",
   },
   {
     id: "ct",
