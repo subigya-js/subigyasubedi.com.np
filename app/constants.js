@@ -1,11 +1,20 @@
 export const projects = [
   {
-    id: "cm",
-    name: "Contact Manager API",
-    desc: "Contact Manager Application Backend built with Express JS and MongoDB.",
-    repo: "https://github.com/subigya-js/blog-application",
-    deploy: "https://github.com/subigya-js/blog-application",
+    id: "bs",
+    name: "BlogSphere",
+    desc: "A Full Stack Blog Application built with NextJS, Express JS and MongoDB.",
+    repo: "https://github.com/subigya-js/BlogSphere",
+    deploy: "https://github.com/subigya-js/BlogSphere",
   },
+
+  {
+    id: "cm",
+    name: "Contact Manager Rest API",
+    desc: "Contact Manager Application Backend built with Express JS.",
+    repo: "https://github.com/subigya-js/contact-manager",
+    deploy: "https://github.com/subigya-js/contact-manager",
+  },
+
   {
     id: "ct",
     name: "Crypto Tracker",
@@ -27,21 +36,5 @@ export const projects = [
     desc: "A Web Application to get the Weather update of a particular city.",
     repo: "https://github.com/subigya-js/React-Weather-App/tree/main/weather-app",
     deploy: "https://weather-app-subedi.netlify.app/",
-  },
-
-  {
-    id: "tdl",
-    name: "ToDo Application",
-    desc: "A regular ToDo Applications to add and remove daily activities.",
-    repo: "https://github.com/subigya-js/ToDo-List",
-    deploy: "https://todo-list-subedi.netlify.app/",
-  },
-
-  {
-    id: "et",
-    name: "Expense Tracer",
-    desc: "A Full Stack application to analyze income and expenses. ",
-    repo: "/",
-    deploy: "/",
   },
 ];
