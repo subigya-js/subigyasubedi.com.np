@@ -1,6 +1,7 @@
 import React, { useState, useRef, FormEvent } from "react";
 import emailjs from "emailjs-com";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -49,8 +50,7 @@ const Contact: React.FC = () => {
       } catch (error) {
         console.error("Failed to send email:", error);
         setSubmitMessage(
-          `Failed to send message. Error: ${
-            error instanceof Error ? error.message : "Unknown error"
+          `Failed to send message. Error: ${error instanceof Error ? error.message : "Unknown error"
           }`
         );
       } finally {
@@ -136,11 +136,10 @@ const Contact: React.FC = () => {
           </button>
           {submitMessage && (
             <p
-              className={`text-sm italic ${
-                submitMessage.includes("successfully")
+              className={`text-sm italic ${submitMessage.includes("successfully")
                   ? "text-green-500"
                   : "text-red-500"
-              }`}
+                }`}
             >
               {submitMessage}
             </p>
@@ -181,6 +180,15 @@ const Contact: React.FC = () => {
             className="text-gray-400 transition-transform duration-300 ease-in-out transform hover:scale-125"
           >
             <FaGithub size={28} />
+          </a>
+
+          <a
+            href="https://x.com/subigya_js"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 transition-transform duration-300 ease-in-out transform hover:scale-125"
+          >
+            <FaXTwitter size={28} />
           </a>
         </div>
       </div>
