@@ -1,5 +1,12 @@
 export const projects = [
   {
+    id: "et",
+    name: "Expense Tracker",
+    desc: "A full-stack Expense Tracker built with Next.js for the frontend and Express.js for the backend.",
+    repo: "https://github.com/subigya-js/expense-tracker",
+    deploy: "https://expense-tracker-subigya.vercel.app/",
+  },
+  {
     id: "bs",
     name: "BlogSphere",
     desc: "A Full Stack Blog Application built with NextJS, Express JS and MongoDB.",
