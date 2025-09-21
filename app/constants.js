@@ -60,7 +60,7 @@ export const experiences = [
     duration: "Jan 2024 - May 2024",
     location: "Bangalore, India (Remote)",
     desc: [
-      "Collaborated with cross-functional teams to develop and enhance web applications using React.js, ensuring responsive design and optimal user experience.",
+      "Collaborated with cross-functional teams to develop and enhance web applications using React.js, ensuring responsive design and optimal UI.",
     ],
   },
   {
