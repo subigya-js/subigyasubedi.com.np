@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed top-5 py-4 px-6 sm:px-8 flex justify-between w-[50%] bg-[#1b1c1c] items-center rounded-full font-bold ${font.className}`}>
+      <nav className={`fixed top-5 py-3 px-6 sm:px-8 flex justify-between w-[50%] bg-[#1b1c1c] items-center rounded-full font-bold ${font.className}`}>
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-4 lg:space-x-8 text-sm font-bold">
           {navItems.map((item) => (
