@@ -20,7 +20,6 @@ export const projects = [
     repo: "https://github.com/subigya-js/expense-tracker",
     deploy: "https://expense-tracker-subigya.vercel.app/",
   },
-
   {
     id: "ct",
     name: "Crypto Tracker",
@@ -29,3 +28,52 @@ export const projects = [
     deploy: "https://crypto-tracker-subigya.netlify.app/",
   },
 ];
+
+export const links = [
+  {
+    id: "gh",
+    name: "GitHub",
+    link: "https://github.com/subigya-js",
+  },
+  {
+    id: "li",
+    name: "LinkedIn",
+    link: "https://www.linkedin.com/in/subigya-js/",
+  },
+  {
+    id: "gm",
+    name: "Gmail",
+    link: "mailto:contact@subigyasubedi.com.np",
+  },
+  {
+    id: "insta",
+    name: "Instagram",
+    link: "https://www.instagram.com/siuubedi.js/",
+  },
+];
+
+export const experiences = [
+  {
+    id: "1",
+    role: "Frontend Developer Intern",
+    company: "Futurense Technologies",
+    duration: "Jan 2024 - May 2024",
+    location: "Bangalore, India (Remote)",
+    desc: [
+      "Collaborated with cross-functional teams to develop and enhance web applications using React.js, ensuring responsive design and optimal user experience.",
+    ],
+  },
+  {
+    id: "2",
+    role: "Frontend Engineer",
+    company: "Ukumi",
+    duration: "Oct 2024 - Present",
+    location: "California, USA (Remote)",
+    desc: [
+      "Developed and maintained the front-end of the Ukumi platform using React.js, ensuring a seamless and engaging user experience.",
+    ],
+  },
+];
+
+export const about =
+  "JavaScript/TypeScript | Golang | Full Stack Web and Mobile App Developer | Open Source and AI Enthusiast";
