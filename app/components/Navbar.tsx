@@ -1,14 +1,16 @@
 "use client";
 
-import React from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useState } from "react";
 import { Montserrat } from "next/font/google";
+import { usePathname, useRouter } from "next/navigation";
+import { FaMoon, FaSun } from "react-icons/fa";
 
 const font = Montserrat({ weight: "400", subsets: ["latin"] });
 
 const Navbar = () => {
   const router = useRouter();
   const pathname = usePathname();
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -17,9 +19,13 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" },
   ];
 
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
     <>
-      <nav className={`h-[10vh] px-4 sm:px-6 flex justify-between items-center font-bold ${font.className}`}>
+      <nav className={`fixed top-5 py-4 px-6 sm:px-8 flex justify-between w-[50%] bg-[#1b1c1c] items-center rounded-full font-bold ${font.className}`}>
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-4 lg:space-x-8 text-sm font-bold">
           {navItems.map((item) => (
@@ -34,6 +40,18 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <button
+          onClick={toggleTheme}
+          className="flex items-center justify-center p-2 rounded-full hover:bg-gray-700 transition-colors"
+          aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {isDarkMode ? (
+            <FaMoon className="text-white" />
+          ) : (
+            <FaSun className="text-yellow-500" />
+          )}
+        </button>
       </nav>
 
       {/* Mobile footer navbar */}
