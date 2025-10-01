@@ -21,6 +21,7 @@ const Landing: React.FC = () => {
   return (
     <div
       className={`w-full flex flex-col md:flex-row justify-center items-center ${font.className}`}
+      suppressHydrationWarning
     >
       <div className={`w-full md:w-1/2 flex justify-center md:justify-start items-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
         <Image
