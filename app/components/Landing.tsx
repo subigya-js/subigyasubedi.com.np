@@ -25,10 +25,10 @@ const Landing: React.FC = () => {
       className={`w-full flex flex-col md:flex-row justify-center items-center ${font.className}`}
       suppressHydrationWarning
     >
-      <div className={`w-full md:w-1/2 flex justify-center md:justify-start items-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+      <div className={`w-[70%] flex justify-center md:justify-start items-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
         <AboutCard />
       </div>
-      <div className={`w-full md:w-1/2 mt-8 md:mt-0 flex flex-col justify-center items-center md:items-end gap-3 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+      <div className={`w-[30%] mt-8 md:mt-0 flex flex-col justify-center items-center md:items-end gap-3 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
         <LinksCard />
       </div>
     </div>
