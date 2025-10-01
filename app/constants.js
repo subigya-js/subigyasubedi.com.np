@@ -1,3 +1,7 @@
+import { CiMail } from "react-icons/ci";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 export const projects = [
   {
     id: "ae",
@@ -34,21 +38,29 @@ export const links = [
     id: "gh",
     name: "GitHub",
     link: "https://github.com/subigya-js",
+    icon: <FaGithub size={40} />,
+    color: "#0a0a0a",
   },
   {
     id: "li",
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/subigya-js/",
+    icon: <FaLinkedinIn size={40} />,
+    color: "#3e65cf",
   },
   {
     id: "gm",
     name: "Gmail",
     link: "mailto:contact@subigyasubedi.com.np",
+    icon: <CiMail size={40} />,
+    color: "#03827e",
   },
   {
-    id: "insta",
-    name: "Instagram",
-    link: "https://www.instagram.com/siuubedi.js/",
+    id: "x",
+    name: "X",
+    link: "https://x.com/subigya_js",
+    icon: <FaXTwitter size={40} />,
+    color: "#657786",
   },
 ];
 
