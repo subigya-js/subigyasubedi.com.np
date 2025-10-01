@@ -15,7 +15,7 @@ const LinksCard = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             className='hover:opacity-80 transition-colors p-2 rounded-lg'
-                            style={{ backgroundColor: link.color, color: '' }}
+                            style={{ backgroundColor: link.color}}
                             title={link.name}
                         >
                             {link.icon}
