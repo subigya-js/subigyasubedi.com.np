@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -32,14 +33,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col items-center justify-center`}
       >
-        <div className="flex justify-center">
+        {/* Fixed top overlay to prevent content from showing above navbar */}
+        <div className="fixed top-0 left-0 w-full h-20 bg-[#121212] z-[998]" />
+        <div className="flex justify-center z-[999]">
           <Navbar />
         </div>
-        <main className="flex-grow flex justify-center overflow-y-auto mt-36">
+        <main className="flex-grow flex justify-center overflow-y-auto mt-28">
           <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
             {children}
           </div>
         </main>
+        <Footer />
       </body>
     </html>
   );

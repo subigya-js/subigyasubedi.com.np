@@ -4,7 +4,7 @@ import { links } from "../constants"
 const LinksCard = () => {
     return (
         <div className='flex flex-col px-6 py-8 gap-6 bg-[#1b1c1c] rounded-3xl'>
-            <h1 className="flex items-center gap-2 text-gray-400"><HiLink size={20} /> LINKS</h1>
+            <h1 className="flex items-center gap-2 text-gray-400"><HiLink size={20} />LINKS</h1>
 
             <div className='grid grid-cols-2 gap-5'>
                 {

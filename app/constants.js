@@ -1,6 +1,8 @@
 import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import futurenseLogo from "./assets/Futurense.jpg";
+import ukumiLogo from "./assets/ukumi.jpeg";
 
 export const projects = [
   {
@@ -67,22 +69,34 @@ export const links = [
 export const experiences = [
   {
     id: "1",
-    role: "Frontend Developer Intern",
-    company: "Futurense Technologies",
-    duration: "Jan 2024 - May 2024",
-    location: "Bangalore, India (Remote)",
-    desc: [
-      "Collaborated with cross-functional teams to develop and enhance web applications using React.js, ensuring responsive design and optimal UI.",
-    ],
-  },
-  {
-    id: "2",
     role: "Frontend Engineer",
     company: "Ukumi",
     duration: "Oct 2024 - Present",
     location: "California, USA (Remote)",
-    desc: [
-      "Developed and maintained the front-end of the Ukumi platform using React.js, ensuring a seamless and engaging user experience.",
+    desc: "Building production-ready applications, developing responsive interfaces, integrating ML-driven video editing APIs, optimizing performance, and collaborating with cross-functional teams for scalable solutions.",
+    logo: ukumiLogo,
+    skills: [
+      "TypeScript",
+      "React",
+      "NextJS",
+      "Transformers.js",
+      "CI/CD",
+    ],
+  },
+  {
+    id: "2",
+    role: "Frontend Developer Intern",
+    company: "Futurense Technologies",
+    duration: "Jan 2024 - May 2024",
+    location: "Bangalore, India (Remote)",
+    desc: "Contributed to IIT Jodhpur website development by building responsive interfaces, optimizing performance, and collaborating with senior developers to deliver a production-ready solution.",
+    logo: futurenseLogo,
+    skills: [
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "RESTful APIs",
+      "Git",
     ],
   },
 ];
