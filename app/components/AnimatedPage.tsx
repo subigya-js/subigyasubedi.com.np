@@ -20,7 +20,7 @@ const AnimatedPage: React.FC<AnimatedPageProps> = ({ children }) => {
   return (
     <div
       className={`transition-all duration-1000 ease-out ${
-        isVisible ? "opacity-100 scale-100" : "opacity-0 scale-50"
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-0"
       }`}
     >
       {children}
