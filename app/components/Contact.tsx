@@ -1,6 +1,7 @@
 import emailjs from "emailjs-com";
 import React, { FormEvent, useRef, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { toast } from "sonner";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -11,7 +12,6 @@ const Contact: React.FC = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -26,10 +26,9 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitMessage("");
 
     if (!formData.name || !formData.email || !formData.message) {
-      setSubmitMessage("Please complete all fields");
+      toast.error("Please complete all fields");
       setIsSubmitting(false);
       return;
     }
@@ -44,11 +43,11 @@ const Contact: React.FC = () => {
           "r2LJxizAL64rZzdGG"
         );
         console.log("Email sent successfully:", result.text);
-        setSubmitMessage("Message sent successfully!");
+        toast.success("Message sent successfully!");
         setFormData({ name: "", email: "", message: "" });
       } catch (error) {
         console.error("Failed to send email:", error);
-        setSubmitMessage(
+        toast.error(
           `Failed to send message. Error: ${error instanceof Error ? error.message : "Unknown error"
           }`
         );
@@ -57,7 +56,7 @@ const Contact: React.FC = () => {
       }
     } else {
       console.error("Form reference is null");
-      setSubmitMessage("An error occurred. Please try again.");
+      toast.error("An error occurred. Please try again.");
       setIsSubmitting(false);
     }
   };
@@ -133,16 +132,6 @@ const Contact: React.FC = () => {
           >
             {isSubmitting ? "Sending..." : `Send`} <GoArrowUpRight size={20} />
           </button>
-          {submitMessage && (
-            <p
-              className={`text-sm italic ${submitMessage.includes("successfully")
-                ? "text-green-500"
-                : "text-red-500"
-                }`}
-            >
-              {submitMessage}
-            </p>
-          )}
         </div>
       </form>
     </div>

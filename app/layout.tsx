@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import "./globals.css";
 import { Ubuntu } from "next/font/google";
+import { Toaster } from "sonner";
 
 const font = Ubuntu({ weight: "400", subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           </div>
         </main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
