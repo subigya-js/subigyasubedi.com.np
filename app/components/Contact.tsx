@@ -62,21 +62,21 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="bg-[#1b1c1c] w-[700px] max-w-3xl shadow-md rounded-3xl px-8 pt-6 pb-8 mb-4"
+        className="bg-[#1b1c1c] w-[400px] sm:w-[500px] lg:w-[700px] max-w-4xl shadow-md rounded-3xl px-6 sm:px-8 pt-6 pb-8 mb-4"
       >
-        <div className="mb-4">
+        <div className="mb-4 sm:mb-6">
           <label
-            className="block text-yellow-400 text-sm font-bold mb-2"
+            className="block text-yellow-400 text-sm sm:text-base font-bold mb-2"
             htmlFor="name"
           >
             Full Name
           </label>
           <input
-            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline text-sm sm:text-base"
             id="name"
             type="text"
             placeholder="Enter your name"
@@ -84,18 +84,17 @@ const Contact: React.FC = () => {
             value={formData.name}
             onChange={handleChange}
             required
-
           />
         </div>
-        <div className="mb-4">
+        <div className="mb-4 sm:mb-6">
           <label
-            className="block text-yellow-400 text-sm font-bold mb-2"
+            className="block text-yellow-400 text-sm sm:text-base font-bold mb-2"
             htmlFor="email"
           >
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline text-sm sm:text-base"
             id="email"
             type="email"
             placeholder="Enter your email address"
@@ -103,18 +102,17 @@ const Contact: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             required
-
           />
         </div>
-        <div className="mb-6">
+        <div className="mb-6 sm:mb-8">
           <label
-            className="block text-yellow-400 text-sm font-bold mb-2"
+            className="block text-yellow-400 text-sm sm:text-base font-bold mb-2"
             htmlFor="message"
           >
             Message
           </label>
           <textarea
-            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline min-h-24 max-h-36"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline min-h-24 sm:min-h-32 max-h-36 sm:max-h-48 text-sm sm:text-base"
             id="message"
             placeholder="Write your message here..."
             name="message"
@@ -124,9 +122,9 @@ const Contact: React.FC = () => {
             rows={4}
           ></textarea>
         </div>
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-center sm:justify-end">
           <button
-            className="flex items-center gap-2 bg-gray-200 hover:bg-gray-200/80 hover:scale-105 duration-200 w-fit text-black px-4 py-3 rounded-xl text-md"
+            className="flex items-center gap-2 bg-gray-200 hover:bg-gray-200/80 hover:scale-105 duration-200 w-full sm:w-fit text-black px-4 py-3 rounded-xl text-sm sm:text-base font-medium justify-center"
             type="submit"
             disabled={isSubmitting}
           >

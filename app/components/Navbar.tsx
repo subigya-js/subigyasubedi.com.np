@@ -3,8 +3,9 @@
 import { Montserrat } from "next/font/google";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
-import { MdOutlineFileDownload } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { resume } from "../constants";
 
 const font = Montserrat({ weight: "400", subsets: ["latin"] });
 
@@ -22,9 +23,9 @@ const Navbar = () => {
   ];
 
   const downloadResume = () => {
-    // Create a link element to trigger download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Assumes resume.pdf is in public folder
+    link.href = resume;
+    link.target = '_blank';
     link.download = 'Subigya_Subedi_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -49,7 +50,7 @@ const Navbar = () => {
       <nav className={`fixed top-5 left-1/2 transform -translate-x-1/2 py-3 px-4 sm:px-6 md:px-8 flex justify-between w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] bg-[#1b1c1c] items-center rounded-full font-bold z-[1000] ${font.className}`} suppressHydrationWarning>
 
         {/* Left side - Mobile hamburger menu */}
-        <div className="flex items-center">
+        <div className="flex items-center md:hidden">
           <button
             onClick={toggleMobileMenu}
             className="md:hidden flex items-center justify-center p-2 rounded-full hover:bg-gray-700/30 transition-colors"
@@ -64,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {/* Center - Desktop menu */}
-        <ul className="hidden md:flex space-x-2 lg:space-x-4 xl:space-x-8 text-sm font-bold">
+        <ul className="hidden md:flex space-x-2 lg:space-x-4 xl:space-x-8 text-sm font-bold bg-blue-00">
           {navItems.map((item) => (
             <li key={item.name}>
               <button
@@ -82,7 +83,7 @@ const Navbar = () => {
         </ul>
 
         {/* Right side - Download Resume Button */}
-        <div className="flex items-center">
+        <div className="flex items-center bg-green-00">
           <button
             onClick={downloadResume}
             className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl border border-gray-500 hover:scale-105 hover:bg-gray-600/10 duration-400 transition-all text-white font-semibold"

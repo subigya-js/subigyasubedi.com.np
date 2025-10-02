@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { experiences } from "../constants";
-import Link from "next/link";
 
 const ExperienceCard = () => {
   return (
