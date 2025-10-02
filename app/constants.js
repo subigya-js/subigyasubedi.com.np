@@ -47,7 +47,7 @@ export const education = [
     name: "Secondary Education (+2) - Science",
     institution: "St. Lawrence Secondary School, Kathmandu, Nepal",
     duration: "2018 - 2020",
-    cgpa: "3.37/10",
+    cgpa: "3.37/4",
     logo: stlawrencelogo,
   },
 ];

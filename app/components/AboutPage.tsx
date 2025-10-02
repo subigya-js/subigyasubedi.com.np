@@ -38,7 +38,7 @@ const AboutPage = () => {
                 </div>
                 <div>
                     {
-                        education.map((edu, index) => (
+                        education.map((edu) => (
                             <div key={edu.id} className="flex items-center gap-4">
                                 <Image src={edu.logo} alt={`logo`} width={80} height={80} className="p-2 rounded-2xl" />
 
