@@ -1,7 +1,6 @@
-import React, { useState, useRef, FormEvent } from "react";
 import emailjs from "emailjs-com";
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import React, { FormEvent, useRef, useState } from "react";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Contact: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -64,11 +63,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="bg-gray-800 shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-[#1b1c1c] w-[700px] max-w-3xl shadow-md rounded-3xl px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
           <label
@@ -78,10 +77,10 @@ const Contact: React.FC = () => {
             Full Name
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline"
             id="name"
             type="text"
-            placeholder="John Doe"
+            placeholder="Enter your name"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -97,10 +96,10 @@ const Contact: React.FC = () => {
             Email
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             type="email"
-            placeholder="john@example.com"
+            placeholder="Enter your email address"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -116,9 +115,9 @@ const Contact: React.FC = () => {
             Message
           </label>
           <textarea
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="shadow appearance-none border rounded-lg w-full py-3 px-3 bg-neutral-400/5 border-none focus:ring-1 focus:ring-gray-600 text-gray-300 placeholder:text-gray-500/70 leading-tight focus:outline-none focus:shadow-outline min-h-24 max-h-36"
             id="message"
-            placeholder="Your message here..."
+            placeholder="Write your message here..."
             name="message"
             value={formData.message}
             onChange={handleChange}
@@ -126,19 +125,19 @@ const Contact: React.FC = () => {
             rows={4}
           ></textarea>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-end">
           <button
-            className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-8 rounded focus:outline-none focus:shadow-outline"
+            className="flex items-center gap-2 bg-gray-200 hover:bg-gray-200/80 hover:scale-105 duration-200 w-fit text-black px-4 py-3 rounded-xl text-md"
             type="submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Sending..." : "Send"}
+            {isSubmitting ? "Sending..." : `Send`} <GoArrowUpRight size={20} />
           </button>
           {submitMessage && (
             <p
               className={`text-sm italic ${submitMessage.includes("successfully")
-                  ? "text-green-500"
-                  : "text-red-500"
+                ? "text-green-500"
+                : "text-red-500"
                 }`}
             >
               {submitMessage}
@@ -146,52 +145,6 @@ const Contact: React.FC = () => {
           )}
         </div>
       </form>
-
-      <div className="mt-8 text-center">
-        <div className="flex justify-center space-x-10">
-          <a
-            href="https://www.facebook.com/subigya.jsx"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 transition-transform duration-300 ease-in-out transform hover:scale-125"
-          >
-            <FaFacebook size={28} />
-          </a>
-          <a
-            href="https://www.instagram.com/subedi.js/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-red-500 transition-transform duration-300 ease-in-out transform hover:scale-125"
-          >
-            <FaInstagram size={28} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/subigya-js/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 transition-transform duration-300 ease-in-out transform hover:scale-125"
-          >
-            <FaLinkedin size={28} />
-          </a>
-          <a
-            href="https://github.com/subigya-js"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 transition-transform duration-300 ease-in-out transform hover:scale-125"
-          >
-            <FaGithub size={28} />
-          </a>
-
-          <a
-            href="https://x.com/subigya_js"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 transition-transform duration-300 ease-in-out transform hover:scale-125"
-          >
-            <FaXTwitter size={28} />
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
