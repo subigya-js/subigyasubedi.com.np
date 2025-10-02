@@ -2,7 +2,55 @@ import { CiMail } from "react-icons/ci";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import futurenseLogo from "./assets/Futurense.jpg";
+import jainlogo from "./assets/Jain.png";
+import photo from "./assets/Photo.jpg";
+import stlawrencelogo from "./assets/stlawrence.jpg";
 import ukumiLogo from "./assets/ukumi.jpeg";
+
+export const about = {
+  image: photo,
+  name: "Subigya",
+  desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
+};
+
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "React",
+  "NextJS",
+  "NodeJS",
+  "ExpressJS",
+  "Golang",
+  "Gin",
+  "MongoDB",
+  "PostgreSQL",
+  "Git",
+  "GitHub",
+  "Postman",
+  "Supabase",
+  "Vercel",
+  "Restful APIs",
+];
+
+export const education = [
+  {
+    id: "1",
+    name: "BE/BTech - Computer Science and Engineering",
+    institution: "JAIN (Deemed-to-be University), Bangalore, India",
+    duration: "2021 - 2025",
+    cgpa: "8.94/10",
+    logo: jainlogo,
+  },
+  {
+    id: "2",
+    name: "Secondary Education (+2) - Science",
+    institution: "St. Lawrence Secondary School, Kathmandu, Nepal",
+    duration: "2018 - 2020",
+    cgpa: "3.37/4",
+    logo: stlawrencelogo,
+  },
+];
 
 export const projects = [
   // {
@@ -105,6 +153,3 @@ export const experiences = [
     skills: ["React", "JavaScript", "Tailwind CSS", "RESTful APIs", "Git"],
   },
 ];
-
-export const about =
-  "JavaScript/TypeScript | Golang | Full Stack Web and Mobile App Developer | Open Source and AI Enthusiast";
