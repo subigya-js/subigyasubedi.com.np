@@ -13,6 +13,8 @@ export const about = {
   desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
 };
 
+export const resume = "https://drive.google.com/file/d/1lcb2e8YyYEvsMw2tU8ascw52oChfg6cH/view?usp=sharing"
+
 export const skills = [
   "JavaScript",
   "TypeScript",

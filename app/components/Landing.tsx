@@ -21,19 +21,19 @@ const Landing: React.FC = () => {
 
   return (
     <div
-      className={`w-full flex flex-col gap-8 ${font.className}`}
+      className={`w-full flex flex-col gap-6 lg:gap-8 px-4 md:px-6 lg:px-8 ${font.className}`}
       suppressHydrationWarning
     >
-      <div className="flex md:flex-row flex-col justify-center items-center gap-10 md:gap-0">
-        <div className={`w-[70%] flex justify-center md:justify-start items-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+      <div className="flex md:flex-row flex-col justify-center items-stretch gap-6 lg:gap-8">
+        <div className={`w-full lg:w-[70%] flex justify-center lg:justify-start items-center transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
           <AboutCard />
         </div>
-        <div className={`w-[30%] mt-8 md:mt-0 flex flex-col justify-center items-center md:items-end gap-3 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
+        <div className={`w-full lg:w-[30%] flex flex-col justify-center items-center lg:items-end gap-3 transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
           <LinksCard />
         </div>
       </div>
       <div className={`transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}>
-        <p className="text-md text-gray-300 mb-4 px-2 font-semibold">Experiences:</p>
+        <p className="text-sm md:text-md text-gray-300 mb-4 px-2 font-semibold">Experiences:</p>
         <ExperienceCard />
       </div>
     </div>

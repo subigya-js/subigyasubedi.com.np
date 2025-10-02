@@ -6,8 +6,8 @@ import { experiences } from "../constants"
 const page = () => {
     return (
         <AnimatedPage>
-            <div className='min-h-[40vh] rounded-3xl px-6 py-4'>
-                <div className="flex flex-col gap-10">
+            <div className='min-h-[70vh] flex items-center justify-center px-6 py-4'>
+                <div className="flex flex-col gap-10 max-w-4xl w-full">
                     {
                         experiences.map((exp) => (
                             <div key={exp.id} className="mb-6 flex items-center gap-4">
