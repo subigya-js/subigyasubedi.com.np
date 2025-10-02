@@ -88,7 +88,7 @@ export const experiences = [
     role: "Frontend Developer Intern",
     company: "Futurense Technologies",
     duration: "Jan 2024 - May 2024",
-    location: "Bangalore, India (Remote)",
+    location: "Bangalore, India",
     desc: "Contributed to IIT Jodhpur website development by building responsive interfaces, optimizing performance, and collaborating with senior developers to deliver a production-ready solution.",
     logo: futurenseLogo,
     skills: [
