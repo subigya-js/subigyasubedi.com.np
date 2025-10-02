@@ -8,7 +8,7 @@ export const projects = [
   // {
   //   id: "ae",
   //   name: "Attend Ease",
-  //   desc: "A a full stack real-time face recognition attendance system that uses browser-based face detection with Hugging Face Transformers.js, enabling secure, client-side authentication without server dependencies.",
+  //   desc: "A full stack real-time face recognition attendance system that uses browser-based face detection with Hugging Face Transformers.js, enabling secure, client-side authentication without server dependencies.",
   //   repo: "https://github.com/subigya-js/attend-ease",
   //   isPrivate: false,
   //   deploy: "https://attend-ease-subigya.vercel.app/",
