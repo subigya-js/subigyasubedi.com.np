@@ -42,7 +42,7 @@ export default function RootLayout({
         <div className="flex justify-center z-[999]">
           <Navbar />
         </div>
-        <main className="flex-grow flex justify-center overflow-y-auto mt-28">
+        <main className="flex-grow flex justify-center overflow-y-auto mt-24">
           <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
             {children}
           </div>
