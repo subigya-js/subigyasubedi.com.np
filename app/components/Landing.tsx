@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
 import { Ubuntu } from "next/font/google";
+import React, { useEffect, useState } from "react";
 import AboutCard from "./AboutCard";
-import LinksCard from "./LinksCard";
 import ExperienceCard from "./ExperienceCard";
+import LinksCard from "./LinksCard";
 
 const font = Ubuntu({ weight: "400", subsets: ["latin"] });
 

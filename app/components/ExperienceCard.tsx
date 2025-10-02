@@ -1,5 +1,7 @@
-import Image from "next/image"
-import { experiences } from "../constants"
+import Image from "next/image";
+import { MdOutlineArrowRightAlt } from "react-icons/md";
+import { experiences } from "../constants";
+import Link from "next/link";
 
 const ExperienceCard = () => {
   return (
@@ -27,6 +29,11 @@ const ExperienceCard = () => {
               </div>
             </div>
           ))}
+      </div>
+      <div className="border-t border-gray-800 pt-4 flex justify-end">
+        <Link href={"/experiences"} className="p-3 bg-gray-200 hover:bg-gray-200/80 hover:scale-105 duration-200 text-black rounded-xl transition flex items-center gap-2">
+          VIEW ALL <MdOutlineArrowRightAlt size={20} />
+        </Link>
       </div>
     </div>
   )
