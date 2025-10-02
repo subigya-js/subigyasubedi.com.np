@@ -7,7 +7,9 @@ import Contact from "../components/Contact";
 const ContactPage = () => {
   return (
     <AnimatedPage>
-      <Contact />
+      <div className="min-h-[70vh] flex items-center justify-center">
+        <Contact />
+      </div>
     </AnimatedPage>
   );
 };
