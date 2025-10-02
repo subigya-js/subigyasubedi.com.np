@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
 
         {/* Center - Desktop menu */}
-        <ul className="hidden md:flex space-x-2 lg:space-x-4 xl:space-x-8 text-sm font-bold bg-blue-00">
+        <ul className="hidden md:flex space-x-2 lg:space-x-4 xl:space-x-8 text-sm font-bold">
           {navItems.map((item) => (
             <li key={item.name}>
               <button
@@ -83,7 +83,7 @@ const Navbar = () => {
         </ul>
 
         {/* Right side - Download Resume Button */}
-        <div className="flex items-center bg-green-00">
+        <div className="flex items-center">
           <button
             onClick={downloadResume}
             className="flex items-center justify-center gap-2 px-3 py-2 rounded-xl border border-gray-500 hover:scale-105 hover:bg-gray-600/10 duration-400 transition-all text-white font-semibold"
