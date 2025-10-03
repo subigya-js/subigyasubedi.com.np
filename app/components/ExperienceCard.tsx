@@ -9,7 +9,7 @@ const ExperienceCard = () => {
       <div className="mt-4">
         {
           experiences.map((exp) => (
-            <div key={exp.id} className="mb-6 flex items-center gap-4">
+            <div key={exp.id} className="mb-6 flex flex-col sm:flex-row sm:items-center gap-4">
               <Image src={exp.logo} alt={`logo`} width={80} height={80} className="p-2 rounded-2xl" />
 
               <div className="flex flex-col gap-1">
