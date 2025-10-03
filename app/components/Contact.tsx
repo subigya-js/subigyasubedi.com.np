@@ -62,11 +62,11 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
+    <div className="w-[90%] flex justify-center items-center px-4 sm:px-6 lg:px-8">
       <form
         ref={form}
         onSubmit={handleSubmit}
-        className="bg-[#1b1c1c] w-[400px] sm:w-[500px] lg:w-[700px] max-w-4xl shadow-md rounded-3xl px-6 sm:px-8 pt-6 pb-8 mb-4"
+        className="bg-[#1b1c1c] w-[360px] sm:w-[500px] lg:w-[700px] max-w-4xl shadow-md rounded-3xl px-6 sm:px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4 sm:mb-6">
           <label

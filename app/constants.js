@@ -138,7 +138,7 @@ export const experiences = [
     id: "1",
     role: "Frontend Engineer",
     company: "Ukumi",
-    duration: "Oct 2024 - Present",
+    duration: "Oct 2024 - Oct 2025",
     location: "California, USA (Remote)",
     desc: "Building production-ready applications, developing responsive interfaces, integrating ML-driven video editing APIs, optimizing performance, and collaborating with cross-functional teams for scalable solutions.",
     logo: ukumiLogo,
