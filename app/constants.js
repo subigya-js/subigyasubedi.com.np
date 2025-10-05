@@ -13,7 +13,7 @@ export const about = {
   desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
 };
 
-export const resume = "https://drive.google.com/file/d/1lcb2e8YyYEvsMw2tU8ascw52oChfg6cH/view?usp=sharing"
+export const resume = "https://drive.google.com/file/d/1mgFsU2Mf9wOO0enE01w80w15qJ4sgGOM/view?usp=sharing"
 
 export const skills = [
   "JavaScript",
@@ -140,7 +140,7 @@ export const experiences = [
     company: "Ukumi",
     duration: "Oct 2024 - Oct 2025",
     location: "California, USA (Remote)",
-    desc: "Building production-ready applications, developing responsive interfaces, integrating ML-driven video editing APIs, optimizing performance, and collaborating with cross-functional teams for scalable solutions.",
+    desc: "Built production-ready applications, developing responsive interfaces, integrating ML-driven video editing APIs, optimizing performance, and collaborating with cross-functional teams for scalable solutions.",
     logo: ukumiLogo,
     skills: ["TypeScript", "React", "NextJS", "Transformers.js", "CI/CD"],
   },
