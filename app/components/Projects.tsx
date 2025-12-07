@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { CiLock } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { VscEyeClosed } from "react-icons/vsc";
 import { LuExternalLink } from "react-icons/lu";
 import { projects } from "../constants";
 
@@ -10,6 +11,7 @@ interface Project {
   desc: string;
   repo: string;
   deploy: string;
+  isDeployed: boolean;
   skills: string[];
   isPrivate: boolean;
 }
@@ -25,11 +27,25 @@ const Projects: React.FC = () => {
                 <div className="flex items-center gap-4 flex-wrap">
                   <h2 className="text-xl font-bold text-gray-200">{project.name}</h2>
                   <div className="flex items-center">
-                    <Link href={project.deploy} target="_blank" rel="noopener noreferrer">
-                      <button className="text-gray-400 hover:text-gray-500 hover:scale-105 duration-500 font-bold py-2 px-4 rounded-lg text-sm transition-colors">
-                        <LuExternalLink size={16} />
-                      </button>
-                    </Link>
+                    {
+                      project.isDeployed ? (
+                        <Link href={project.deploy} target="_blank" rel="noopener noreferrer">
+                          <button className="text-gray-400 hover:text-gray-500 hover:scale-105 duration-500 font-bold py-2 px-4 rounded-lg text-sm transition-colors">
+                            <LuExternalLink size={16} />
+                          </button>
+                        </Link>
+                      ) : (
+                        <button className="text-gray-400 hover:text-gray-500 hover:scale-105 duration-500 font-bold py-2 px-4 rounded-lg text-sm cursor-pointer relative group">
+                          <VscEyeClosed size={16} />
+                          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            <div className="bg-[#1b1c1c] text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                              Deployment in Progress
+                            </div>
+                            <div className="w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-[#1b1c1c] mx-auto"></div>
+                          </div>
+                        </button>
+                      )
+                    }
                     {project.isPrivate ? (
                       <button className="text-gray-400 hover:text-gray-500 hover:scale-105 duration-500 font-bold py-2 px-4 rounded-lg text-sm cursor-pointer relative group">
                         <CiLock size={16} />

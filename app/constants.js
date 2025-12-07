@@ -13,7 +13,7 @@ export const about = {
   desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
 };
 
-export const resume = "https://drive.google.com/file/d/1mgFsU2Mf9wOO0enE01w80w15qJ4sgGOM/view?usp=sharing"
+export const resume = "https://drive.google.com/file/d/1sPbBIlPwRsm4UNiLlM221c-8zlJjwF3X/view?usp=sharing"
 
 export const skills = [
   "JavaScript",
@@ -55,15 +55,16 @@ export const education = [
 ];
 
 export const projects = [
-  // {
-  //   id: "ae",
-  //   name: "Attend Ease",
-  //   desc: "A full stack real-time face recognition attendance system that uses browser-based face detection with Hugging Face Transformers.js, enabling secure, client-side authentication without server dependencies.",
-  //   repo: "https://github.com/subigya-js/attend-ease",
-  //   isPrivate: false,
-  //   deploy: "https://attend-ease-subigya.vercel.app/",
-  //   skills: ["React", "NextJS", "ExpressJS", "MongoDB", "Transformers.js"],
-  // },
+  {
+    id: "cg",
+    name: "Constitution GPT",
+    desc: "A Constitutional Intelligence System Powered by RAG + LLMs.",
+    repo: "https://github.com/subigya-js/constitution-gpt",
+    isPrivate: false,
+    deploy: "",
+    isDeployed: false,
+    skills: ["NextJS", "Python", "OpenAI", "FastAPI", "ChromaDB"],
+  },
   {
     id: "pa",
     name: "Pasal",
@@ -71,6 +72,7 @@ export const projects = [
     repo: "https://github.com/subigya-js/pasal",
     isPrivate: true,
     deploy: "https://pasal-subigya.vercel.app/",
+    isDeployed: false,
     skills: ["React", "NextJS", "Golang", "Gin", "Vercel", "MongoDB"],
   },
   {
@@ -80,6 +82,7 @@ export const projects = [
     repo: "https://github.com/subigya-js/audio-transcriber",
     isPrivate: false,
     deploy: "https://audio-transcriber-subigya.vercel.app/",
+    isDeployed: true,
     skills: ["React", "NextJS", "Whisper", "DistilBART", "Transformers.js"],
   },
   {
@@ -89,6 +92,7 @@ export const projects = [
     repo: "https://github.com/subigya-js/expense-tracker",
     isPrivate: false,
     deploy: "https://expense-tracker-subigya.vercel.app/",
+    isDeployed: true,
     skills: ["React", "NextJS", "ExpressJS", "MongoDB", "Chart.js"],
   },
   {
@@ -98,6 +102,7 @@ export const projects = [
     repo: "https://github.com/subigya-js/Cypto-Tracker",
     isPrivate: false,
     deploy: "https://crypto-tracker-subigya.netlify.app/",
+    isDeployed: true,
     skills: ["React", "NextJS", "Chart.js", "RESTful APIs"],
   },
 ];
