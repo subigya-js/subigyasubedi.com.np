@@ -13,7 +13,7 @@ export const about = {
   desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
 };
 
-export const resume = "https://drive.google.com/file/d/1mgFsU2Mf9wOO0enE01w80w15qJ4sgGOM/view?usp=sharing"
+export const resume = "https://drive.google.com/file/d/1sPbBIlPwRsm4UNiLlM221c-8zlJjwF3X/view?usp=sharing"
 
 export const skills = [
   "JavaScript",
@@ -72,7 +72,7 @@ export const projects = [
     repo: "https://github.com/subigya-js/pasal",
     isPrivate: true,
     deploy: "https://pasal-subigya.vercel.app/",
-    isDeployed: true,
+    isDeployed: false,
     skills: ["React", "NextJS", "Golang", "Gin", "Vercel", "MongoDB"],
   },
   {
