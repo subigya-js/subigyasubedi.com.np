@@ -145,7 +145,7 @@ export const experiences = [
     id: "1",
     role: "Software Engineer",
     company: "Nep Ai",
-    duration: "Dec 2025 - Present",
+    duration: "Nov 2025 - Present",
     location: "Kathmandu, Nepal (Remote)",
     desc: "Developing and maintaining full-stack web applications with modern frameworks, building server-side logics, designing responsive user interfaces, integrating AI/ML-driven features and managing databases to deliver scalable and production-ready solutions.",
     logo: nepailogo,
@@ -169,7 +169,7 @@ export const experiences = [
     skills: ["TypeScript", "React", "NextJS", "Transformers.js", "CI/CD"],
   },
   {
-    id: "2",
+    id: "3",
     role: "Frontend Developer Intern",
     company: "Futurense Technologies",
     duration: "Jan 2024 - May 2024",
