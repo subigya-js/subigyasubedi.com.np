@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import futurenseLogo from "./assets/Futurense.jpg";
 import jainlogo from "./assets/Jain.png";
+import nepailogo from "./assets/nepai.png";
 import photo from "./assets/Photo.jpg";
 import stlawrencelogo from "./assets/stlawrence.jpg";
 import ukumiLogo from "./assets/ukumi.jpeg";
@@ -13,7 +14,8 @@ export const about = {
   desc: "Software Engineer | Full Stack Developer | AI Enthusiast & Researcher",
 };
 
-export const resume = "https://drive.google.com/file/d/1sPbBIlPwRsm4UNiLlM221c-8zlJjwF3X/view?usp=sharing"
+export const resume =
+  "https://drive.google.com/file/d/1sPbBIlPwRsm4UNiLlM221c-8zlJjwF3X/view?usp=sharing";
 
 export const skills = [
   "JavaScript",
@@ -141,6 +143,23 @@ export const links = [
 export const experiences = [
   {
     id: "1",
+    role: "Software Engineer",
+    company: "Nep Ai",
+    duration: "Dec 2025 - Present",
+    location: "Kathmandu, Nepal (Remote)",
+    desc: "Developing and maintaining full-stack web applications with modern frameworks, building server-side logics, designing responsive user interfaces, integrating AI/ML-driven features and managing databases to deliver scalable and production-ready solutions.",
+    logo: nepailogo,
+    skills: [
+      "TypeScript",
+      "NextJS",
+      "ExpressJS",
+      "NodeJS",
+      "PostgreSQL",
+      "Supabase",
+    ],
+  },
+  {
+    id: "2",
     role: "Frontend Engineer",
     company: "Ukumi",
     duration: "Oct 2024 - Oct 2025",

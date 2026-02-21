@@ -8,7 +8,7 @@ const ExperienceCard = () => {
     <div className='min-h-[40vh] bg-[#1b1c1c] rounded-3xl px-6 py-4'>
       <div className="mt-4">
         {
-          experiences.map((exp) => (
+          experiences.slice(0, 2).map((exp) => (
             <div key={exp.id} className="mb-6 flex flex-col sm:flex-row sm:items-center gap-4">
               <Image src={exp.logo} alt={`logo`} width={80} height={80} className="p-2 rounded-2xl" />
 
